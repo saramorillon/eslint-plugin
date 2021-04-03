@@ -1,18 +1,18 @@
-# @smo/eslint-config-typescript
+# @mini-utils/eslint-config-typescript
 
 A set of ESLint rule for your Typescript project
 
 ## Installation
 
 ```bash
-yarn add -D @smo/eslint-config-typescript
+yarn add -D @mini-utils/eslint-config-typescript
 # or
-npm install --save-dev @smo/eslint-config-typescript
+npm install --save-dev @mini-utils/eslint-config-typescript
 ```
 
 ## Dependencies
 
-`@smo/eslint-config-typescript` needs a few dependencies to work:
+`@mini-utils/eslint-config-typescript` needs a few dependencies to work:
 
 - @typescript-eslint/eslint-plugin
 - @typescript-eslint/parser
@@ -26,7 +26,7 @@ npm install --save-dev @smo/eslint-config-typescript
 
 ## Configuration
 
-Add `@smo/eslint-config-typescript` to your eslint configuration file:
+Add `@mini-utils/eslint-config-typescript` to your eslint configuration file:
 
 ```json
 {

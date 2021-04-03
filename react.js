@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["typescript"],
+  extends: ["@mini-utils/eslint-config-typescript"],
   overrides: [
     {
       files: ["*.tsx"],

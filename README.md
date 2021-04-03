@@ -30,7 +30,7 @@ Add `@mini-utils/eslint-config-typescript` to your eslint configuration file:
 
 ```json
 {
-  "extends": ["typescript"]
+  "extends": ["@mini-utils/eslint-config-typescript"]
 }
 ```
 
@@ -38,6 +38,10 @@ Some plugins are also available:
 
 ```json
 {
-  "extends": ["typescript/react", "typescript/jest", "typescript/path-alias"]
+  "extends": [
+    "@mini-utils/eslint-config-typescript/react",
+    "@mini-utils/eslint-config-typescript/jest",
+    "@mini-utils/eslint-config-typescript/path-alias"
+  ]
 }
 ```

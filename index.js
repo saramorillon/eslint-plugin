@@ -14,6 +14,9 @@ module.exports = {
       files: ["*.ts", "*.tsx"],
       settings: {
         "import/resolver": {
+          node: {
+            extensions: [".ts", ".tsx"],
+          },
           typescript: {},
         },
       },

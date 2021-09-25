@@ -43,6 +43,9 @@
     },
     "eslint-plugin-react-hooks": {
       "optional": true
+    },
+    "eslint-plugin-react-jest": {
+      "optional": true
     }
   }
 }

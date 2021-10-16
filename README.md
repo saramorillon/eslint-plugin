@@ -24,7 +24,6 @@ npm install --save-dev @mini-utils/eslint-config-typescript
 - eslint-plugin-jest (for `jest` preset)
 - eslint-plugin-testing-library (for `jest-react` preset)
 - eslint-plugin-jest-dom (for `jest-react` preset)
-- eslint-import-resolver-typescript (for `path-alias` preset)
 
 ## Configuration
 
@@ -43,8 +42,7 @@ Some plugins are also available:
   "extends": [
     "@mini-utils/eslint-config-typescript/react",
     "@mini-utils/eslint-config-typescript/jest",
-    "@mini-utils/eslint-config-typescript/jest-react",
-    "@mini-utils/eslint-config-typescript/path-alias"
+    "@mini-utils/eslint-config-typescript/jest-react"
   ]
 }
 ```

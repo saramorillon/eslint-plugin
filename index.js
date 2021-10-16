@@ -12,14 +12,6 @@ module.exports = {
   overrides: [
     {
       files: ["*.ts", "*.tsx"],
-      settings: {
-        "import/resolver": {
-          node: {
-            extensions: [".ts", ".tsx"],
-          },
-          typescript: {},
-        },
-      },
       parser: "@typescript-eslint/parser",
       plugins: ["@typescript-eslint", "import"],
       extends: [

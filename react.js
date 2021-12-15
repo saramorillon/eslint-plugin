@@ -2,7 +2,7 @@ module.exports = {
   extends: ["@mini-utils/eslint-config-typescript"],
   overrides: [
     {
-      files: ["*.tsx"],
+      files: ["*.ts", "*.tsx"],
       env: {
         browser: true,
       },

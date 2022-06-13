@@ -1,5 +1,5 @@
 {
-  "name": "@mini-utils/eslint-config-typescript",
+  "name": "@saramorillon/eslint-config-typescript",
   "version": "1.0.7",
   "repository": "https://github.com/saramorillon/eslint-config-typescript.git",
   "author": "Sara Morillon <sara.morillon@gmail.com>",

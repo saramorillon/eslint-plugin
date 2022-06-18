@@ -21,10 +21,14 @@ module.exports = {
         "plugin:import/typescript",
       ],
       rules: {
+        "require-await": "warn",
+        "import/first": "warn",
         "import/order": [
           "warn",
           { groups: [["builtin", "external"], "index", "parent", "sibling"] },
         ],
+        "@typescript-eslint/await-thenable": "warn",
+        "@typescript-eslint/no-floating-promises": "warn",
       },
     },
     {

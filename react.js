@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["@mini-utils/eslint-config-typescript"],
+  extends: ["@saramorillon/eslint-config-typescript"],
   overrides: [
     {
       files: ["*.ts", "*.tsx"],

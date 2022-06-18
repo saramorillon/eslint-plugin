@@ -1,18 +1,18 @@
-# @mini-utils/eslint-config-typescript
+# @saramorillon/eslint-config-typescript
 
 A set of ESLint rule for your Typescript project
 
 ## Installation
 
 ```bash
-yarn add -D @mini-utils/eslint-config-typescript
+yarn add -D @saramorillon/eslint-config-typescript
 # or
-npm install --save-dev @mini-utils/eslint-config-typescript
+npm install --save-dev @saramorillon/eslint-config-typescript
 ```
 
 ## Dependencies
 
-`@mini-utils/eslint-config-typescript` needs a few dependencies to work:
+`@saramorillon/eslint-config-typescript` needs a few dependencies to work:
 
 - @typescript-eslint/eslint-plugin
 - @typescript-eslint/parser
@@ -27,11 +27,11 @@ npm install --save-dev @mini-utils/eslint-config-typescript
 
 ## Configuration
 
-Add `@mini-utils/eslint-config-typescript` to your eslint configuration file:
+Add `@saramorillon/eslint-config-typescript` to your eslint configuration file:
 
 ```json
 {
-  "extends": ["@mini-utils/eslint-config-typescript"]
+  "extends": ["@saramorillon/eslint-config-typescript"]
 }
 ```
 
@@ -40,9 +40,9 @@ Some plugins are also available:
 ```json
 {
   "extends": [
-    "@mini-utils/eslint-config-typescript/react",
-    "@mini-utils/eslint-config-typescript/jest",
-    "@mini-utils/eslint-config-typescript/jest-react"
+    "@saramorillon/eslint-config-typescript/react",
+    "@saramorillon/eslint-config-typescript/jest",
+    "@saramorillon/eslint-config-typescript/jest-react"
   ]
 }
 ```

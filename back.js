@@ -4,21 +4,9 @@ module.exports = {
     es6: true,
     node: true,
   },
-  parser: "@typescript-eslint/parser",
-  parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: "module",
-    project: "./tsconfig.json",
-  },
-  settings: {
-    "import/resolver": {
-      typescript: {},
-    },
-  },
-  plugins: ["@saramorillon", "@typescript-eslint", "import"],
+  plugins: ["@saramorillon", "import"],
   extends: [
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
@@ -30,10 +18,28 @@ module.exports = {
       "warn",
       { groups: [["builtin", "external"], "index", "parent", "sibling"] },
     ],
-    "@typescript-eslint/await-thenable": "warn",
-    "@typescript-eslint/no-floating-promises": "warn",
   },
   overrides: [
+    {
+      files: ["*.ts", "*.tsx"],
+      parser: "@typescript-eslint/parser",
+      parserOptions: {
+        ecmaVersion: 2018,
+        sourceType: "module",
+        project: "./tsconfig.json",
+      },
+      settings: {
+        "import/resolver": {
+          typescript: {},
+        },
+      },
+      plugins: ["@typescript-eslint"],
+      extends: ["plugin:@typescript-eslint/recommended"],
+      rules: {
+        "@typescript-eslint/await-thenable": "warn",
+        "@typescript-eslint/no-floating-promises": "warn",
+      },
+    },
     {
       files: ["*.test.*"],
       env: {

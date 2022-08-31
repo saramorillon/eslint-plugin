@@ -7,10 +7,7 @@ module.exports = {
         browser: true,
         jest: true,
       },
-      extends: [
-        "plugin:jest-dom/recommended",
-        "plugin:testing-library/recommended",
-      ],
+      extends: ["plugin:jest-dom/recommended", "plugin:testing-library/react"],
     },
   ],
 };

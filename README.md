@@ -1,18 +1,18 @@
-# @saramorillon/eslint-config-typescript
+# @saramorillon/eslint-plugin
 
 A set of ESLint rule for your Typescript project
 
 ## Installation
 
 ```bash
-yarn add -D @saramorillon/eslint-config-typescript
+yarn add -D @saramorillon/eslint-plugin
 # or
-npm install --save-dev @saramorillon/eslint-config-typescript
+npm install --save-dev @saramorillon/eslint-plugin
 ```
 
 ## Dependencies
 
-`@saramorillon/eslint-config-typescript` needs a few dependencies to work:
+`@saramorillon/eslint-plugin` provide following plugins:
 
 - @typescript-eslint/eslint-plugin
 - @typescript-eslint/parser
@@ -27,22 +27,18 @@ npm install --save-dev @saramorillon/eslint-config-typescript
 
 ## Configuration
 
-Add `@saramorillon/eslint-config-typescript` to your eslint configuration file:
+Add `plugin:@saramorillon/back` to your eslint configuration file for backend projects:
 
 ```json
 {
-  "extends": ["@saramorillon/eslint-config-typescript"]
+  "extends": ["plugin:@saramorillon/back"]
 }
 ```
 
-Some plugins are also available:
+Add `plugin:@saramorillon/front` to your eslint configuration file for frontend projects:
 
 ```json
 {
-  "extends": [
-    "@saramorillon/eslint-config-typescript/react",
-    "@saramorillon/eslint-config-typescript/jest",
-    "@saramorillon/eslint-config-typescript/jest-react"
-  ]
+  "extends": ["plugin:@saramorillon/front"]
 }
 ```

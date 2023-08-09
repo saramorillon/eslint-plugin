@@ -19,11 +19,11 @@ npm install --save-dev @saramorillon/eslint-plugin
 - typescript
 - eslint
 - eslint-plugin-import
-- eslint-plugin-react (for `react` preset)
-- eslint-plugin-react-hooks (for `react` preset)
-- eslint-plugin-jest (for `jest` preset)
-- eslint-plugin-testing-library (for `jest-react` preset)
-- eslint-plugin-jest-dom (for `jest-react` preset)
+- eslint-plugin-react
+- eslint-plugin-react-hooks
+- eslint-plugin-testing-library
+- eslint-plugin-jest-dom
+- eslint-plugin-vitest
 
 ## Configuration
 

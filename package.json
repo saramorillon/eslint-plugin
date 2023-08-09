@@ -2,10 +2,13 @@
   "name": "@saramorillon/eslint-plugin",
   "version": "2.0.2",
   "repository": "https://github.com/saramorillon/eslint-config-typescript.git",
-  "author": "Sara Morillon <sara.morillon@gmail.com>",
+  "author": {
+    "name": "Sara Morillon",
+    "url": "https://saramorillon.com/"
+  },
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^4.8.2"
+    "typescript": "^5.1.6"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "*",
@@ -13,10 +16,10 @@
     "eslint": "*",
     "eslint-import-resolver-typescript": "*",
     "eslint-plugin-import": "*",
-    "eslint-plugin-jest": "*",
     "eslint-plugin-jest-dom": "*",
     "eslint-plugin-react": "*",
     "eslint-plugin-react-hooks": "*",
-    "eslint-plugin-testing-library": "*"
+    "eslint-plugin-testing-library": "*",
+    "eslint-plugin-vitest": "*"
   }
 }

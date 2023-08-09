@@ -4,49 +4,41 @@ module.exports = {
     es6: true,
     node: true,
   },
-  plugins: ["@saramorillon", "import"],
-  extends: [
-    "eslint:recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings",
-    "plugin:import/typescript",
-  ],
+  plugins: ['@saramorillon', 'import'],
+  extends: ['eslint:recommended', 'plugin:import/errors', 'plugin:import/warnings', 'plugin:import/typescript'],
   rules: {
-    "require-await": "warn",
-    "import/first": "warn",
-    "import/order": [
-      "warn",
-      { groups: [["builtin", "external"], "index", "parent", "sibling"] },
-    ],
+    'require-await': 'warn',
+    'import/first': 'warn',
+    'import/order': ['warn', { groups: [['builtin', 'external'], 'index', 'parent', 'sibling'] }],
   },
   overrides: [
     {
-      files: ["*.ts", "*.tsx"],
-      parser: "@typescript-eslint/parser",
+      files: ['*.ts', '*.tsx'],
+      parser: '@typescript-eslint/parser',
       parserOptions: {
         ecmaVersion: 2018,
-        sourceType: "module",
-        project: "./tsconfig.json",
+        sourceType: 'module',
+        project: './tsconfig.json',
       },
       settings: {
-        "import/resolver": {
+        'import/resolver': {
           typescript: {},
         },
       },
-      plugins: ["@typescript-eslint"],
-      extends: ["plugin:@typescript-eslint/recommended"],
+      plugins: ['@typescript-eslint'],
+      extends: ['plugin:@typescript-eslint/recommended'],
       rules: {
-        "@typescript-eslint/await-thenable": "warn",
-        "@typescript-eslint/no-floating-promises": "warn",
+        '@typescript-eslint/await-thenable': 'warn',
+        '@typescript-eslint/no-floating-promises': 'warn',
       },
     },
     {
-      files: ["*.test.*"],
+      files: ['*.test.*'],
       env: {
         jest: true,
       },
-      plugins: ["jest"],
-      extends: ["plugin:jest/recommended"],
+      plugins: ['vitest'],
+      extends: ['plugin:vitest/recommended'],
     },
   ],
-};
+}
